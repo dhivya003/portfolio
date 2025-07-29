@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #222; background: #f8f8f8; }
+header { background: rgba(0, 0, 0, 0.8); color: white; position: fixed; top: 0; width: 100%; z-index: 100; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+.nav-links { display: flex; list-style: none; gap: 2rem; }
+.nav-links a { color: white; text-decoration: none; font-weight: 500; }
+.nav-links a:hover { color: cyan; }
+
+.hero { display: flex; justify-content: space-around; align-items: center; padding-top: 100px; min-height: 100vh; background: linear-gradient(to right, #020024, #090979, #00d4ff); color: white; }
+.hero-img { width: 300px; border-radius: 50%; box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.5); }
+.hero-buttons .btn, .hero-buttons .btn-outline { padding: 10px 20px; border-radius: 20px; margin: 10px; text-decoration: none; font-weight: bold; }
+.btn { background: cyan; color: black; }
+.btn-outline { border: 2px solid cyan; color: white; }
+
+.section { padding: 100px 50px; text-align: center; }
+.section-title { font-size: 2rem; margin-bottom: 40px; color: #00aaff; }
+.skills-grid { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+.skills-grid span { background: #00aaff; color: white; padding: 10px 20px; border-radius: 20px; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.project-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+.project-card:hover { transform: translateY(-10px); }
+.project-card img { width: 100%; border-radius: 10px; }
+.project-links a { margin: 0 10px; text-decoration: none; color: #00aaff; font-weight: bold; }
+
+footer { background: black; color: white; text-align: center; padding: 20px 0; }
+
+.dark-mode { background: #121212; color: #fff; }
+.dark-mode .section-title { color: cyan; }
+.typing {
+  overflow: hidden;
+  border-right: 3px solid cyan;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 4s steps(30, end) infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
